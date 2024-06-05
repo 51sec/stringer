@@ -4,7 +4,7 @@ ruby_version_file = File.expand_path(".ruby-version", __dir__)
 ruby File.read(ruby_version_file).chomp if File.readable?(ruby_version_file)
 source "https://rubygems.org"
 
-gem "rails", "~> 7.0.1"
+gem "rails", "~> 7.0.8", ">= 7.0.8.4"
 
 gem "bcrypt"
 gem "delayed_job"
@@ -37,12 +37,12 @@ end
 group :development, :test do
   gem "capybara"
   gem "coveralls_reborn", require: false
-  gem "factory_bot_rails"
+  gem "factory_bot_rails", ">= 6.3.0"
   gem "faker"
   gem "pry-byebug"
   gem "rspec"
   gem "rspec-html-matchers"
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 6.0.2"
   gem "shotgun"
   gem "simplecov"
   gem "timecop"
