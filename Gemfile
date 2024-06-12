@@ -4,7 +4,7 @@ ruby_version_file = File.expand_path(".ruby-version", __dir__)
 ruby File.read(ruby_version_file).chomp if File.readable?(ruby_version_file)
 source "https://rubygems.org"
 
-gem "rails", "~> 7.0.1"
+gem "rails", "~> 7.0.8", ">= 7.0.8.3"
 
 gem "bcrypt"
 gem "delayed_job"
