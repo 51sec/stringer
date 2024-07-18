@@ -28,10 +28,10 @@ gem "uglifier"
 gem "will_paginate"
 
 group :development do
-  gem "rubocop", require: false
-  gem "rubocop-rails", require: false
+  gem "rubocop", ">= 1.44.0", require: false
+  gem "rubocop-rails", ">= 2.18.0", require: false
   gem "rubocop-rake", require: false
-  gem "rubocop-rspec", require: false
+  gem "rubocop-rspec", ">= 2.17.1", require: false
 end
 
 group :development, :test do
@@ -46,5 +46,5 @@ group :development, :test do
   gem "shotgun"
   gem "simplecov"
   gem "timecop"
-  gem "webmock", require: false
+  gem "webmock", ">= 3.19.0", require: false
 end
