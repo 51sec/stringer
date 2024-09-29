@@ -1,4 +1,4 @@
-FROM ruby:3.2.0
+FROM ruby:bookworm
 
 ENV RACK_ENV=production
 ENV PORT=8080
