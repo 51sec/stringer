@@ -28,7 +28,7 @@ gem "uglifier"
 gem "will_paginate"
 
 group :development do
-  gem "rubocop", require: false
+  gem "rubocop", ">= 1.66.0", require: false
   gem "rubocop-rails", require: false
   gem "rubocop-rake", require: false
   gem "rubocop-rspec", require: false
