@@ -108,7 +108,8 @@ GEM
       railties (>= 5.0.0)
     faker (3.1.0)
       i18n (>= 1.8.11, < 2)
-    feedbag (1.0.0)
+    feedbag (1.0.2)
+      addressable (~> 2.8)
       nokogiri (~> 1.8, >= 1.8.2)
     feedjira (3.2.2)
       loofah (>= 2.3.1)
@@ -135,7 +136,7 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.1)
+    mini_portile2 (2.8.9)
     minitest (5.17.0)
     multi_json (1.15.0)
     multi_xml (0.6.0)
@@ -151,7 +152,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.14.0)
+    nokogiri (1.14.5)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     parallel (1.22.1)
@@ -167,7 +168,7 @@ GEM
     public_suffix (5.0.1)
     puma (6.0.2)
       nio4r (~> 2.0)
-    racc (1.6.2)
+    racc (1.8.1)
     rack (2.2.6.2)
     rack-protection (3.0.5)
       rack
@@ -327,7 +328,7 @@ DEPENDENCIES
   delayed_job_active_record
   factory_bot_rails
   faker
-  feedbag
+  feedbag (>= 1.0.1)
   feedjira
   httparty
   nokogiri (~> 1.14.0.rc1)
@@ -359,7 +360,7 @@ DEPENDENCIES
   will_paginate
 
 RUBY VERSION
-   ruby 3.2.0
+   ruby 3.1.7p261
 
 BUNDLED WITH
-   2.3.25
+   2.3.27
